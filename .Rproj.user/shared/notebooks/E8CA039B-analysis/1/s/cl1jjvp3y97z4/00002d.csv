@@ -1,0 +1,32 @@
+"0","performance::r2(nb.2013)
+"
+"2","Warning in model.matrix.default(drop.special(fixedform), fr, contrasts) :"
+"2","
+ "
+"2"," variable 'Treatment' is absent, its contrast will be ignored
+"
+"2","Warning in model.matrix.default(drop.special(fixedform), fr, contrasts) :"
+"2","
+ "
+"2"," variable 'Tile.Placement' is absent, its contrast will be ignored
+"
+"2","Warning in model.matrix.default(drop.special(fixedform), fr, contrasts) :"
+"2","
+ "
+"2"," variable 'Location' is absent, its contrast will be ignored
+"
+"2","Warning in model.matrix.default(drop.special(fixedform), fr, contrasts) :"
+"2","
+ "
+"2"," variable 'Depth' is absent, its contrast will be ignored
+"
+"2","Warning:"
+"2"," mu of 5.9 is too close to zero, estimate of random effect variances may be unreliable.
+"
+"1","[34m# R2 for Mixed Models
+
+[39m"
+"1","  Conditional R2: 0.856
+     Marginal R2: 0.722"
+"1","
+"
