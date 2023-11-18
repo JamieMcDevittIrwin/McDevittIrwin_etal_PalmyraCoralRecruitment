@@ -449,7 +449,7 @@ plot(pois.2016_simresids) # looks good!
 
 
 # EEMEANS
-emmeans(pois.2016, ~ Treatment * Tile.Placement, type="response")
+emmeans.2016 <-emmeans(pois.2016, ~ Treatment * Tile.Placement, type="response")
 
 
 # pairwise contrasts
@@ -617,7 +617,7 @@ p_2014.edge.ind <- coral.2014_wide %>%
     theme(axis.ticks.x=element_blank(),
         axis.text.x = element_blank()) +
   labs(x= "", y= "Coral Recruits\n (Edges only)") +
- ggtitle("b) One Year") +
+ ggtitle("a) One Year") +
   theme_pubr(base_size=16) 
 p_2014.edge.ind
 
@@ -730,7 +730,7 @@ p_2016.edge.ind
 
 ### Plot
 ```{r}
-ggarrange(p_2016.emmeans.edge, p_2016.emmeans.edge,
+ggarrange(p_2014.emmeans.edge, p_2016.emmeans.edge,
           nrow=2, common.legend= TRUE, legend= "right")
 
 ggsave(filename= "../figures/edge-combined-eemeans.png",
